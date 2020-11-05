@@ -1,16 +1,20 @@
 /*********************************** Header **************************************/
 .header {
-  padding: 80px; /* some padding */
+  padding: 50px; /* some padding */
   text-align: center; /* center the text */
-  background: #1abc9c; /* green background */
-  color: white; /* white text color */
+  background: #3372c3be; /* green background */
+  color: rgba(230, 245, 16, 0.829); /* white text color */
 }
 
 /* Increase the font size of the <h1> element */
 .header h1 {
-  font-size: 40px;
+  font-size: 80px;
+  text-shadow: rgba(16, 6, 105, 0.822) 1px 0 10px;
 }
 
+.header p {
+  font-size: 30px;
+} 
 /******************************* Style the top navigation bar *******************************/
 .navbar {
   overflow: hidden; /* Hide overflow */

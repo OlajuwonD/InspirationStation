@@ -1,5 +1,5 @@
 export default () => `
 <div class="footer">
-  <h2>Footer</h2>
+  <h2>Stay Inspired - Stay Free</h2>
 </div>
 `;

@@ -2,14 +2,14 @@ import * as views from "./views";
 
 export default () => `
 <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
+    <h2>Quote of The Day</h2>
+    <h5>November 4, 2020</h5>
+    <div class="main" style="height:200px;" href= "https://cdn.pixabay.com/photo/2015/07/02/10/45/waterfall-828948_960_720.jpg" >Image</div>
+    <p>Quote of The Day:</p>
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
+    <h2>Photo of The Day</h2>
+    <h5>November 4th, 2020</h5>
     <div class="fakeimg" style="height:200px;">Image</div>
     <p>Some text..</p>
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>

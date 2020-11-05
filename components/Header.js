@@ -1,6 +1,6 @@
 export default () => `
 <div class="header">
-  <h1>My Website</h1>
-  <p>A website created by me.</p>
+  <h1>Inspiration Station</h1>
+  <p>"Content that inspires one to Get Free and Stay Free!"</p>
 </div>
 `;
