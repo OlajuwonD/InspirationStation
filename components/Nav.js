@@ -1,8 +1,13 @@
-export default () => `
-<div class="navbar">
-  <a href="#">Home</a>
-  <a href="#">Photos</a>
-  <a href="#">Prose</a>
-  <a href="#" class="right">About Us</a>
-</div>
-`;
+import Links from "../store/Links";
+
+export default links => `
+<nav>
+    <i class="fas fa-bars"></i>
+    <ul class="hidden--mobile nav-links">
+    ${Links.map(
+      link =>
+        `<li><a href="${link.title}" data-navigo><i class="fa fa-fw ${link.icon}"></i> ${link.text}</a></li>`
+    ).join("")}
+  </ul>
+  </nav>
+  `;

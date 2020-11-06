@@ -1,4 +1,4 @@
 import * as views from "./views";
 export default st => `
-    ${views[st.page](st)}
+    ${views[st.view](st)}
 `;

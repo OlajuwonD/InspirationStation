@@ -1,5 +1,5 @@
 export { default as Home } from "./Home";
 export { default as Links } from "./Links";
-export { default as Bio } from "./Bio";
-export { default as Form } from "./Form";
-export { default as Blog } from "./Blog";
+export { default as AboutUs } from "./AboutUs";
+export { default as Prose } from "./Prose";
+export { default as Photos } from "./Photos";
