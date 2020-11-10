@@ -25,6 +25,7 @@
   "dependencies": {
     "lodash": "^4.17.20",
     "navigo": "^7.1.2",
-    "parcel": "^1.12.4"
+    "parcel": "^1.12.4",
+    "unirest": "^0.6.0"
   }
 }

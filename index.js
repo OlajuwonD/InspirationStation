@@ -22,3 +22,27 @@ function render(st = state.Home) {
 
 render(state.Home);
 
+var unirest = require("unirest");
+
+var req = unirest("GET", "https://healthruwords.p.rapidapi.com/v1/quotes/");
+
+req.query({
+	"id": "731",
+	"t": "Wisdom",
+	"maxR": "1",
+	"size": "medium"
+});
+
+req.headers({
+	"x-rapidapi-host": "healthruwords.p.rapidapi.com",
+	"x-rapidapi-key": "5f7d2c691bmsh49730c1a26bb7acp1f89e9jsne94f614c3c09",
+	"useQueryString": true
+});
+
+
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
+});
+

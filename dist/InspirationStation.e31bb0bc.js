@@ -126,7 +126,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<div class=\"header\">\n  <h1>Inspiration Station</h1>\n  <p>\"Content that Inspires one to Get Free and Stay Free!\"</p>\n</div>\n";
+  return "\n<div class=\"header\">\n  <h1>Inspiration Station</h1>\n  <p>\"Content that Inspires one to BE Free!\"</p>\n</div>\n";
 };
 
 exports.default = _default;
@@ -19703,7 +19703,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58652" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59505" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
