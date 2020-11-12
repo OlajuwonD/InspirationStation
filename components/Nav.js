@@ -2,7 +2,6 @@ import Links from "../store/Links";
 
 export default links => `
 <nav>
-    <i class="fas fa-bars"></i>
     <ul class="hidden--mobile nav-links">
     ${Links.map(
       link =>
