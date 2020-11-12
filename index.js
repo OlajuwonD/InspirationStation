@@ -1,7 +1,9 @@
+
 import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
 import Navigo from "navigo";
 import {capitalize} from "lodash";
+const request = require('request');
 
 const router = new Navigo(window.location.origin);
 router
@@ -22,27 +24,16 @@ function render(st = state.Home) {
 
 render(state.Home);
 
-var unirest = require("unirest");
+const options = {
+  method: "GET",
+  url: "https://healthruwords.p.rapidapi.com/v1/quotes/",
+  headers: {
+    'x-rapidapi-key': "5f7d2c691bmsh49730c1a26bb7acp1f89e9jsne94f614c3c09"
+  }
+};
 
-var req = unirest("GET", "https://healthruwords.p.rapidapi.com/v1/quotes/");
+request(options, function (error, response, body) {
+    if (error) throw new Error(error);
 
-req.query({
-	"id": "731",
-	"t": "Wisdom",
-	"maxR": "1",
-	"size": "medium"
+    console.log(body);
 });
-
-req.headers({
-	"x-rapidapi-host": "healthruwords.p.rapidapi.com",
-	"x-rapidapi-key": "5f7d2c691bmsh49730c1a26bb7acp1f89e9jsne94f614c3c09",
-	"useQueryString": true
-});
-
-
-req.end(function (res) {
-	if (res.error) throw new Error(res.error);
-
-	console.log(res.body);
-});
-
